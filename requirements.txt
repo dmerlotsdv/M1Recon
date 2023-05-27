@@ -1,2 +1,6 @@
+#Ce fichier n'est pas a jour.
+#This file is not up to date.
+
+
 beautifulsoup4
 googlesearch-python
