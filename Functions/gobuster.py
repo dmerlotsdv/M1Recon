@@ -43,7 +43,7 @@ class Gobuster:
 #Function to launch the tool and specify where data is stored post execution.
 
     def run_gobuster(self, mode, url, wordlists):
-        subprocess.Popen(["mate-terminal", "--", "gobuster", mode, "-u", url, "-w", wordlists, "-o", "/home/parrot/result.txt"])
+        subprocess.Popen(["mate-terminal", "--", "gobuster", mode, "-u", url, "-w", wordlists, "-o", "/home/parrot/reports/gobuster.txt"])
 
 #Function to allow user to adapt the type of enumeration wanted.
 #Fonction pour adapter le type d'enumeration voulue par l'utilisateur.
