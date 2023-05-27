@@ -73,4 +73,9 @@ https://github.com/dmerlotsdv/M1Recon/assets/132995913/7be887eb-fc9b-4d5e-ae8d-e
 
 ################################################################################################
 
+NOTES : RETOUR SUR LE PROJET 
+
+Malheureusement j'ai du annuler l'intégration de google dorks par manque de temps, et j'ai du faire l'impasse sur le coté "graphic" (banniere menu, couleurs) du script pour arriver a sortir quelque chose a temps.
+cela a été un challenge etant donné que je n'avais aucune base en python et j'ai du mener ce projet seul qui aurai pu être plus interessant avec un peu plus de temps. 
+
 
