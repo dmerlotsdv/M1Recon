@@ -1,3 +1,5 @@
+#Menu displayed
+#Menu affiché
 def show_main_menu():
     print("""
           Commandes      |                 Descriptions                    
@@ -6,5 +8,4 @@ def show_main_menu():
             2            |     httrack
             3            |     Nikto
             4            |     Nmap
-            5            |     Dorks
 """)

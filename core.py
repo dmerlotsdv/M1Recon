@@ -4,13 +4,18 @@ from Functions.gobuster import Gobuster
 from Functions.httrack import Mirror
 from Functions.nikto import Nikto
 from Functions.nmap import Nmap
-from Functions.Dorks import Dorks
+#from Functions.Dorks import Dorks
 
 from menu.allmenu import show_main_menu
 
 
 # Main Menu
 # Menu Principal
+
+
+
+#recupération de l'input utilisateur et message d'erreur si input incorrect
+# ask for user input and error message if incorrect
 
 def get_user_input():
     while True:
@@ -24,6 +29,10 @@ def get_user_input():
         except KeyboardInterrupt:
             return
 
+
+
+#Gestion de la navigation vers les outils en fonction de l'input utilisateur
+#internal management to call tools
 
 def main_menu():
     show_main_menu()
@@ -45,6 +54,6 @@ def main_menu():
         nmap = Nmap()
         nmap.execute()
 
-    if user_input == 5:
-        dorks = Dorks()
-        dorks.execute()
+#   if user_input == 5:
+#       dorks = Dorks()
+#       dorks.execute()

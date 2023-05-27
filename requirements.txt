@@ -4,3 +4,4 @@
 
 beautifulsoup4
 googlesearch-python
+python-nmap

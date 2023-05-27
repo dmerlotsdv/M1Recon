@@ -29,9 +29,13 @@ class Dorks:
         elif self.dork_type == 4:
             query = f"site:{self.target} intext:'password' filetype:log"
 
-        for url in search(query, tld="com", lang="en", num=10, start=0, stop=None, pause=2):
+        for url in search(query, start=0, stop=None, pause=2):
             print(url)
 
 if __name__ == '__main__':
     dorks = Dorks()
     dorks.execute()
+
+
+#Fonction non appliqué au programme car prolème avec les modules importer et les commande de lancement.
+#Function canceled du to lack of time and issue with modules and command to run the tool.

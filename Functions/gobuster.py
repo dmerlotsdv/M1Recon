@@ -3,6 +3,8 @@ import os
 import re
 
 
+#Fonction pour récupérer l'input user avec verification de la données entrée via une regex pour les IP et URL, affichage du menu et des wordlist disponible ainsi que définition d'une worlist par defaut.
+#Function to get user input and check input wia a RegEx for URL/IP , display a menu, worlist and set a default wordlist.
 class Gobuster:
     def get_user_input(self):
         while True:
@@ -23,6 +25,9 @@ class Gobuster:
                     wordlist_path = wordlists[int(wordlist_choice) - 1]
                 return url, choice, wordlist_path
 
+
+#This function takes the available wordlist in path and create a list to display
+#Cette fonction recupère les wordlist dans le dossier et crée une liste qui sera affichée plus tard.
     def get_wordlists(self):
         wordlist_dir = "/usr/share/seclists/Discovery/Web-Content"
         wordlists = []
@@ -34,8 +39,14 @@ class Gobuster:
             print(f"Wordlist directory {wordlist_dir} does not exist.")
         return wordlists
 
+#Fonction pour lancer l'outil avec un fichier de sortie prédefinie pour la données.
+#Function to launch the tool and specify where data is stored post execution.
+
     def run_gobuster(self, mode, url, wordlists):
         subprocess.Popen(["mate-terminal", "--", "gobuster", mode, "-u", url, "-w", wordlists, "-o", "/home/parrot/result.txt"])
+
+#Function to allow user to adapt the type of enumeration wanted.
+#Fonction pour adapter le type d'enumeration voulue par l'utilisateur.
 
     def execute(self):
         url, choice, wordlist = self.get_user_input()
